@@ -17,8 +17,8 @@
        </div>
        <p>Unit Price: ZMW<%=  product.price%></p>
        <p>Stock : <%=  product.quantity %></p>
-       <a href="">View <i class="fa-solid fa-eye"></i></a>
-       <a href="">Buy <i class="fa-solid fa-bag-shopping"></i></a>
+       <a href="/user/product-detail/<%= product.id %>">View <i class="fa-solid fa-eye"></i></a>
+       <!-- <a href="">Buy <i class="fa-solid fa-bag-shopping"></i></a> -->
     </div>
     <% }); %>
   </div>

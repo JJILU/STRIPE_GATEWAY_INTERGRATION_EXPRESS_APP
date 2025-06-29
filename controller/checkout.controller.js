@@ -1,7 +1,7 @@
 const Product = require("../models/products.model.js")
 
 exports.checkoutController = (req,res) => {
-
+ 
   res.render('checkout',{
     pageTitle: 'Omi\'s Shop | Checkout'
   });
@@ -15,11 +15,19 @@ exports.homeController = (req,res) => {
 };
 
 exports.productDetailController = (req,res) => {
-  const prodId = req.body.id;
+  const prodId = req.params.id;
+  console.log(prodId);
 
-  
-  res.render('home', {
-    pageTitle: 'Omi\'s Shop | Details',
-    products: Product
+  getProductById = {};
+
+  Product.forEach(product => {
+    if (prodId == product.id) {
+      getProductById = product;
+    }
+  });
+  console.log(getProductById);
+  res.render('product_details', {
+    pageTitle: `Omi\'s Shop | ${getProductById.name}`,
+    product: getProductById 
   });
 };

@@ -7,6 +7,8 @@ const { checkoutController, homeController, productDetailController } = require(
 // GET ROUTES
 router.get('/home', homeController ); 
 router.get('/checkout', checkoutController); 
+router.get('/product-detail/:id', productDetailController); 
+
 
 
 // POST ROUTES

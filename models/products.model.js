@@ -1,6 +1,6 @@
 Product = [
   {
-    id: "12AA",
+    id: "12AB",
     name: "Jean Suit",
     quantity: 450,
     price: 350.78,
@@ -14,14 +14,14 @@ Product = [
     image: "/images/products/t-shirt.jpg"
   },
   {
-    id: "12AA",
+    id: "12AV",
     name: "Jeans",
     quantity: 200,
     price: 26.78,
     image: "/images/products/jean_trouser.jpg"
   },
   {
-    id: "12BB",
+    id: "12BH",
     name: "Modern Suit",
     quantity: 700,
     price: 67.78,
@@ -29,21 +29,21 @@ Product = [
   },
   
   {
-    id: "12AA",
+    id: "12JA",
     name: "Ripped Jeans",
     quantity: 300,
     price: 56.78,
     image: "/images/products/ripped_jean.jpg"
   },
   {
-    id: "12CC",
-    name: "Skirt",
+    id: "12BC",
+    name: "Umberlla Skirt",
     quantity: 260,
     price: 12.88,
     image: "/images/products/skirt.jpg"
   },
   {
-    id: "12DD",
+    id: "12MD",
     name: "Snickers",
     quantity: 200,
     price: 34.44,
@@ -51,7 +51,7 @@ Product = [
   },
   {
     id: "12DF",
-    name: "Jeans",
+    name: "Jeans T-Shirt",
     quantity: 300,
     price: 54.74,
     image: "/images/products/jeans_jacket.jpg"
