@@ -1,0 +1,26 @@
+<%- include('./includes/head.ejs') %>
+
+<title><%= pageTitle %></title>
+</head>
+<body>
+
+<%- include('./includes/navigation.ejs') %>
+
+  <h1>Home</h1>
+  <div class="container">
+      
+  <% products.forEach(product => {  %>
+    <div class="product-item">
+      <h2><%=  product.name %></h2>
+       <div>
+        <img src="<%= product.image %>" alt="<%=  product.name %>">
+       </div>
+       <p>Unit Price: ZMW<%=  product.price%></p>
+       <p>Stock : <%=  product.quantity %></p>
+       <a href="">View <i class="fa-solid fa-eye"></i></a>
+    </div>
+    <% }); %>
+  </div>
+
+
+<%- include('./includes/footer.ejs') %>
