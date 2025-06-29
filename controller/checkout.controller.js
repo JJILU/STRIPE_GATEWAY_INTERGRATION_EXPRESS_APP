@@ -3,13 +3,13 @@ const Product = require("../models/products.model.js")
 exports.checkoutController = (req,res) => {
 
   res.render('checkout',{
-    pageTitle: 'Checkout'
+    pageTitle: 'Omi\'s Shop | Checkout'
   });
 };
 
 exports.homeController = (req,res) => {
   res.render('home', {
-    pageTitle: 'Home',
+    pageTitle: 'Omi\'s Shop | Home',
     products: Product
   });
 };
@@ -19,7 +19,7 @@ exports.productDetailController = (req,res) => {
 
   
   res.render('home', {
-    pageTitle: 'Product Details',
+    pageTitle: 'Omi\'s Shop | Details',
     products: Product
   });
 };
